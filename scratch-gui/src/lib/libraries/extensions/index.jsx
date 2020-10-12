@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import PictoBloxMathURL from './PictoBloxMath/PBM.png';
+import PictoBloxMathInsetURL from './PictoBloxMath/PBMinset.png';
+
 export default [
     {
         name: (
@@ -317,5 +320,26 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'PictoBloxMath',
+        extensionId: 'PictoBloxMath',
+        collaborator: 'Me',
+        iconURL: PictoBloxMathURL,
+        insetIconURL:  PictoBloxMathInsetURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Square and Square Root"
+                description="my block"
+                id="gui.extension.newblocks.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://scratch.mit.edu/wedo'
+
     }
 ];
+
